@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Way Home | Begin Your Journey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Begin Your Journey</h1>
+    <p>This is where your conversation begins. Ask your questions, reflect, and follow the path home.</p>
+    <div id="chat-box" style="border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; background: #fff; margin-bottom: 10px;">
+      <p><em>Ave Maria GPT:</em> Welcome. Let’s begin with a question: <strong>Is there such a thing as truth?</strong></p>
+    </div>
+    <input type="text" id="user-input" placeholder="Type your response..." style="width: 80%; padding: 8px;">
+    <button onclick="sendMessage()" style="padding: 8px 12px;">Send</button>
+  </div>
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('user-input');
+      const chatBox = document.getElementById('chat-box');
+      const userText = input.value.trim();
+      if (!userText) return;
+      const userMessage = document.createElement('p');
+      userMessage.innerHTML = "<strong>You:</strong> " + userText;
+      chatBox.appendChild(userMessage);
+      input.value = '';
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // Placeholder for GPT response
+      const gptReply = document.createElement('p');
+      gptReply.innerHTML = "<em>Ave Maria GPT:</em> That's a good question. Let's think about it together...";
+      chatBox.appendChild(gptReply);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  </script>
+</body>
+</html>

@@ -6,15 +6,6 @@ body {
   background: #f8f9fa;
   color: #333;
 }
-header {
-  background: #eee;
-  padding: 10px;
-}
-.back-link {
-  text-decoration: none;
-  color: #004085;
-  font-weight: bold;
-}
 .container {
   max-width: 800px;
   margin: auto;
@@ -22,10 +13,4 @@ header {
 }
 h1, h2 {
   color: #2c3e50;
-}
-ol {
-  padding-left: 20px;
-}
-ol li {
-  margin-bottom: 15px;
 }
