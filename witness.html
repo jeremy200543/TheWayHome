@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 5 – Can I Witness It?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Can I witness it today?</h1>
+    <p>
+      Yes. The Church Jesus founded still walks the earth.
+    </p>
+    <p>
+      You can hear her voice. You can see her miracles. You can receive her sacraments. You can be welcomed home.
+    </p>
+    <p>
+      But don’t take anyone’s word for it. Come and see.
+    </p>
+
+    <div style="margin-top: 20px;">
+      <button onclick="goBack()" style="margin-right: 10px;">Back</button>
+      <button onclick="goToNext()">I’m ready to see</button>
+    </div>
+
+    <script>
+      function goToNext() {
+        window.location.href = "mass.html";
+      }
+      function goBack() {
+        window.location.href = "church.html";
+      }
+    </script>
+  </div>
+</body>
+</html>
